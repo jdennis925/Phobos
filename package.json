@@ -1,0 +1,11 @@
+{
+  "name": "rpgmapapp",
+  "version": "1.0.0",
+  "description": "a map for rpg tabletop games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Dennis",
+  "license": "ISC"
+}

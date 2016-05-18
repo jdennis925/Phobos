@@ -1,6 +1,20 @@
-angular.module('rpgmapapp', [])
+angular.module('rpgmapapp', ['routerRoutes'])
 
     .controller('mainController', function () {
         var vm = this;
-        vm.customMessage = "main controller custom message";
+    })
+    
+    .controller('homeController', function () {
+        var vm = this;
+        vm.message = "home page";
+    }) 
+    
+    .controller('aboutController', function () {
+        var vm = this;
+        vm.message = "RPG Map App is created for virtual tabletop combat.";
+    })
+
+    .controller('boardController', function () {
+        var vm = this;
+        vm.boardName = "The Board Name";
     })

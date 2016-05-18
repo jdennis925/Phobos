@@ -10,4 +10,4 @@ app.get('*', function(req, res){
 });
 
 app.listen(8080);
-console.log('check localhost:8080 in your browser');
+console.log('open localhost:8080');

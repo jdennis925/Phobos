@@ -1,15 +1,21 @@
 <div class="jumbotron text-center">
     <h1>{{board.boardName}}</h1>
     
+    
+    <form class="form-inline" ng-submit="board.CreateBoardArray()">
+        <input type="text" class="form-control" ng-model="board.RowCount.value">
+        <input type="text" class="form-control" ng-model="board.ColCount.value"/>
+        <button type="submit" class="btn btn-success">Create Board</button>
+    </form>
+    
+    
     <!--dummy table to be filled in-->
     <table class="table table-bordered">
-        <tr>
-        <td>Row 1, Column 1</td>
-        <td>Row 1, Column 2</td>
-        </tr>
-        <tr>
-        <td>Row 2, Column 1</td>
-        <td>Row 2, Column 2</td>
-        </tr>
+        
+        <tbody ng-repeat="arr in board.boardArray">
+            <tr>
+                <td ng-repeat="tile in arr.tiles">{{tile.color}}</td>
+            </tr>
+        </tbody>
     </table>
 </div>
